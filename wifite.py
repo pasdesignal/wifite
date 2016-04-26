@@ -2324,8 +2324,8 @@ class WPAAttack(Attack):
                 self.RUN_CONFIG.exit_gracefully(0)
 
 
-        # clean up
-        remove_airodump_files(self.RUN_CONFIG.temp + 'wpa')
+        # clean up ******shaggy change here*************
+        #remove_airodump_files(self.RUN_CONFIG.temp + 'wpa')
         send_interrupt(proc_read)
         send_interrupt(proc_deauth)
 
